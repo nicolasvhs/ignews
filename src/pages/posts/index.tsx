@@ -28,7 +28,7 @@ export default function Posts({ posts }: PostsProps) {
 
       <main className={styles.container}>
         <div className={styles.posts}>
-          { posts.map(post => (
+          { posts.length && posts.map(post => (
             <Link key={post.slug} href={`/posts/${post.slug}`}>
               <a>
                 <time>{post.updatedAt}</time>
@@ -56,7 +56,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const posts = response.results.map(post => {
     return {
       slug: post.uid,
-      title: RichText.asText(post.data.title),
+      title: post.data.title,
       excerpt: post.data.content.find(content => content.type === 'paragraph')?.text ?? '',
       updatedAt: new Date(post.last_publication_date).toLocaleDateString('pt-BR', {
         day: '2-digit',
