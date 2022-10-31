@@ -1,0 +1,24 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "publication",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": "support",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Incididunt cillum tempor cillum eiusmod id ullamco sit reprehenderit aute eu officia aliqua exercitation officia. Do nulla id excepteur duis laboris aute tempor adipisicing nisi exercitation. Nulla duis commodo deserunt aute eiusmod exercitation aute enim officia magna exercitation duis.",
+        "spans": []
+      }
+    ],
+    "updatedat": "2014-11-25"
+  }
+}
